@@ -1,0 +1,273 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/*NAVBAR*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.n-links{
+    display: flex;
+    column-gap: 20px;
+}
+
+.n-links a{
+    text-decoration: none;
+    color: darkblue;
+}
+
+.n-links a:hover{
+    text-decoration: underline;
+}
+
+.toggle{
+    display: none;
+}
+
+/*SIDE NAVBAR*/
+
+.s-nav{
+    background-color: darkblue;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: -60%;
+    padding: 5px;
+    color: aliceblue;
+    transition: 1s;
+}
+
+.s-n-link {
+    margin-bottom: 30px;
+    color:aliceblue;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.s-n-links a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+.s-n-links a:hover{
+    text-decoration: underline;
+}
+
+/*HEADER*/
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.shop{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:darkslateblue;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/*SERVICE*/
+
+.service{
+    padding: 20px;     
+}
+
+.serve-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serve-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.serve-2 div{
+    background-color:#F2F4F7;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.arrival-1{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 40%;
+    left:15%;
+    border-radius: 10px;
+    border: none;
+}
+
+.subs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search{
+    width: 80vw;
+    padding: 11px;
+    margin-bottom: 10px;
+    border: solid black;
+     
+}
+
+.subs button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:rgb(0, 0, 62);
+    color: aliceblue;
+}
+
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: rgb(0, 0, 62);
+    color: #F2F4F7;
+}
+
+.product-container{
+    margin-top: 20px;
+}
+
+.search-box{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin:auto
+}
+
+.search-box input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.search-box input:focus{
+    outline: none;
+}
+
+.products {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.product{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.contact{
+    background-color: rgb(0, 0, 62);
+    justify-content: center;
+    margin: 30px;
+    margin-left: 25%;
+    border-radius: 20px;
+    color: aliceblue;
+    width: 50%;
+}
+
+.contact div{
+    padding: 30px;
+    margin: 10px;
+}
+
+.input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.Message{
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+}
+
+.Message:focus{
+    outline: none;
+}
+
+.contact button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:darkblue;
+    color: aliceblue;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:600px) {
+    .toggle{
+    display: block;
+}
+.n-links{
+    display: none;
+}
+.header{
+    flex-direction: column;
+}
+.serve-1{
+    display: none;
+}
+.serve-2{
+    flex-direction: column;
+}
+}
